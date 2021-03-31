@@ -35,3 +35,15 @@ nav .nav-section a {
   margin-right: 10px;
   color: #000000;
 }
+nav .nav-section .menu-icon {
+  background-image: url("../assets/apps-black-18dp/2x/baseline_apps_black_18dp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+}
+nav .nav-section img {
+  border-radius: 50%;
+  margin-left: 10px;
+}
