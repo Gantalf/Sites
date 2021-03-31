@@ -8,6 +8,11 @@ html {
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 header {
   width: 100%;
@@ -16,4 +21,17 @@ header {
 header nav {
   display: flex;
   justify-content: flex-end;
+  margin-top: 13px;
+}
+header nav .nav-section {
+  width: 250px;
+  height: auto;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav-section a {
+  margin-right: 10px;
+  color: #000000;
 }
