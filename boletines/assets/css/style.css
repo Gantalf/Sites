@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title {
+  text-transform: uppercase;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.container {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 960px;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  /*box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color;*/
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  position: relative;
+  padding: 1.8em;
+}
+
+.actions {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close {
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #2f3e46;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  line-height: 1.8em;
+  padding-top: 1em;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: 30px;
+}
+
+.table td,
+.table th {
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.table tr:nth-child(even) {
+  background-color: #cad2c5;
+}
+
+.title-item {
+  border-bottom-style: solid;
+  border-width: 2px;
+  padding: 20px;
+  font-size: 2em;
+  display: flex;
+}
+
+.position {
+  background-color: #0f2027;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-left: -0.7em;
+  margin-right: 0.5em;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.main-image {
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 1em;
+    overflow: scroll;
+  }
+  /*rompemos la tabla, la ponemos uno abajo del otro*/
+  td {
+    display: block;
+    width: 100%;
+  }
+  /*Hacemos mas grandes los numeros*/
+  td:nth-of-type(1) {
+    font-size: 1.5em;
+  }
+  /*sacamos encabezados*/
+  th {
+    display: none;
+  }
+  .main-image {
+    float: none;
+  }
+}
+
+@media (min-height: 550px) {
+  .content {
+    height: 500px;
+  }
+}

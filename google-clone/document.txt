@@ -1,0 +1,81 @@
+Maquetado Header:
+
+Dentro del Header tendremos una barra de navegacion con 4 elementos dentro. Atajo li*4.
+dentro de li agregaremos nuestra etiqueta a (ancla) que se conpone de una referencia (href).
+
+
+Agregando estilos al Header:
+
+en main.css lo primero es resetear (*) a margin 0 padding 0 y el box-sizing para no tener ningun problema. El profesor decidio optar por hacerlo en body,
+pero como aprendimos en curso anterior es mejor hacerlo asi.
+Luego seteamos el html para poder usar 1rem=10px y el tipo del letra en body.
+
+Al header le agregamos el width y heigth y luego decimos que la etiqueta nav que este adentro del header (expecificidad), ponemos el diplay fle y la mandamos al lado derecho.
+
+
+posicionando una lista en Horizontal:
+
+Creamos una clase en ul, en css la llamamos con especificidad, luego le damos el width que queremos y el heigth vamos a poner auto, porque al padre ya le dimos ese valor, entonces lo queremos que tome un valor mayor.
+
+Luego display flex para posicionar ese contenedor ul, le sacamos los estilos, justificamos al centro y alineamos tambien al centro. Eso es la caja del ul, o sea, se va a centrar y jusfificar dentro del ul de 250px.
+
+Despues llamamos a 'nav .nav-section a' para darle separacion entre palabras y color. Comom vamos a utilizar muchos a nos vamos arriba y seteamos que text-decoration: none y cursor;pointer. esto para que desde entrada saque el subrayado y agregue la manito cada vez que pasamos po arriba.
+
+
+Manejo de icones e imagenes en etiquetas:
+
+en donde va el icono creamos una clase para ubicarlo. Luego la llamamos con especificidad. Ese icono va a ser un backgroun-image. No-repeat es para cuando la imagen sea grande o chica no se repita para rellenar espacios. size contain para que tome el tamanio del contenedor.
+
+luego buscamos la etiqueta img con especificidad, le damos border radios para hacerla redonda y margin-left para separarla un poco.
+
+
+Maquetado de la seccion principal (main)
+
+La seccion main, hace referencia a donde va a estar todo nuestro contenido. Esta seccion va a contar de tres secciones:
+1-logo
+2-input (buscador).
+pero este es un input complejo, porque tenemos un iquino de una lupa a la izquierda y un icono de microfo a la derecha.
+Asi que la maquitacion adentro de ese seccion es crear un contenedor (div) seguidamente un span (lupa) el input (donde se va a buscar) y una etiqueta de ancla (microfono), etiqueta de ancla porque al contrario de la lupa que no hace nada, este si redirecciona a otro lado.
+3-botones. Aca vamos a necesitar dos contenedores donde cada uno tendra una etiqueta de button.
+
+
+Estilos en la seccion principal 
+
+En nuestra hoja de estilos, primero llamamos al main, y acomodamos el margin y text aling.
+
+luego llamamos a la etiqueta main y la clase main-logo, le daremos un with al contenedor y margin.
+
+Porque 0 auto?
+margin: 0 auto para centrar el contenido.
+Para esto deben definir previamente el width.
+Como funciona el margin?
+Margin es el margen que tendra un elemento frente a otros.
+Sus valores son…
+margin: top right bottom left
+Al utilizar solo dos valores como margin: 0 auto hacemos referencia a… margin: (arriba y abajo) (derecha e izquierda)
+Es por eso que se centra con los valores 0 auto por que no aplica margin arriba y abajo, y aplica un margin auto a los lados.
+
+Despues le damos valores a la img.
+
+
+Estilos en la seccion del input
+
+Primero al contenedor .main-input vamos a darle las mismas dimenciones que al anterior.
+seguido llamamos al contenedor del input con los iconos, le damos el width, el border radius (porque este contenedor va a tener la forma de la caja donde se busca) le decimos el border con el color que tiene el de google. Luego para dejar centrado el input y los iconos cada uno es su lado utilizamos el justify y aling.
+
+Despues llamamos al input con especificidad, y le damos el valor a la caja del input, 450px, la altura. Border: none sirve para quitar el border gris propio del input y outline: none le quitamos el borde azul cuando damos click.
+
+
+iconos y manejo de background hover
+
+llamamos al contenerdor del input, y le agregamos un pseudoelemento hover. Este es un efecto de css. le agregamos el box-shadow que le agrega una sombra al elemento y le damos los valores y color. luego le decimos tambien que el color del borde se haga un poco mas oscuro, esto va a pasar cada vez que hagamos hover.
+
+despues agregamos como background los iconos.
+
+
+Estilos en los botones
+
+llamamos a la clase con especificidad le damos un width y la centramos.
+Luegos a los div le decimos inline-block para que se pongan en horizontal.
+
+Trabajamos en los estilos de los botones y luego agregamos un hover.
