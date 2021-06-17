@@ -1,0 +1,18 @@
+@import './Vars.scss';
+@import './Media.scss';
+
+body {
+  margin: 0;
+  font-family: $theme-font;
+  background: $main-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// En Linux/Ubuntu con Chrome, se ven las barras de navegación y el sitio pierde belleza.
+// Logre repararlo agregando en App.scss:
+::-webkit-scrollbar {
+  display: none;
+}
